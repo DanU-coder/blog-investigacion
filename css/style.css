@@ -1,8 +1,27 @@
+*{
+    font-family: "Rubik";
+}
 body, main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+body > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border: #000 solid 2px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li > a{
+    margin: 0.64rem;
 }
 main{
     display: flex;
@@ -12,6 +31,19 @@ main{
     border: #000 solid 2px;
     width: 50%;
 }
-header{
+article > header{
     margin: 4rem;
+}
+h1{
+    font-weight: bolder;
+    font-size: 64px;
+}
+header > img{
+    justify-self: center;
+    align-self: center;
+    width: 75%;
+    height: 25%;
+}
+a{
+    text-decoration: none;
 }
