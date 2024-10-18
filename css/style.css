@@ -13,37 +13,47 @@ body > header{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    border: #000 solid 2px;
+    /* border: #000 solid 2px; */
 }
 ul{
     list-style: none;
     display: flex;
     flex-direction: row;
 }
-li > a{
+header a{
     margin: 0.64rem;
+    color: #000;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: #000 solid 2px;
+    /* border: #000 solid 2px; */
     width: 50%;
+    height: 100%;
 }
 article > header{
     margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 h1{
     font-weight: bolder;
     font-size: 64px;
 }
-header > img{
-    justify-self: center;
-    align-self: center;
-    width: 75%;
-    height: 25%;
-}
 a{
     text-decoration: none;
+}
+@media (feColorMatrixw  ) {
+    
+}
+#click-to-top{
+    display: block;
+    z-index: 10;
+    position: fixed;
+    bottom: 5%;
+    left: 3%;
 }
