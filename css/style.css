@@ -10,8 +10,8 @@ body, main{
 }
 body > header{
     position: fixed;
-    top: 0;
-    display: flex;
+    bottom: 0;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
