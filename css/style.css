@@ -1,5 +1,5 @@
 :root{
-    font-family: "rubik";
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
     margin: 0;
@@ -9,12 +9,16 @@ body{
     align-items: center;
 }
 .article-box{
-    max-width: 60%;
+    max-width: 480px;
 }
 .article-header{
     width: 100%;
 }
-.article-header img{
+
+img{
+    display: flex;
+    justify-self: center;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -24,5 +28,10 @@ body{
 @media (max-width: 555px) {
     .article-box{
         max-width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .article-header img{
+        width: 60%;
     }
 }
