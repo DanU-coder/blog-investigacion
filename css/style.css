@@ -9,20 +9,34 @@ body{
     align-items: center;
 }
 .article-box{
-    max-width: 60%;
+    max-width: 520px;
 }
 .article-header{
     width: 100%;
+    padding: 1.6rem 0;
+    border-bottom: #000 solid 1px;
+}
+.article-title{
+    font-size: 64px;
 }
 .article-header img{
-    width: 100%;
+    display: flex;
+    justify-self: center;
+    width: 70%;
 }
 
 .article-content{
     margin-top: 3.2rem;
 }
-@media (max-width: 555px) {
+@media (max-width: 520px) {
     .article-box{
         max-width: 90%;
+    }
+    .article-title{
+        font-size: 10vw;
+    }
+    .article-header img{
+        max-width: 100%;
+        height: auto;
     }
 }
