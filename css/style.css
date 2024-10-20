@@ -23,6 +23,6 @@ body{
 }
 @media (max-width: 555px) {
     .article-box{
-        max-width: auto;
+        max-width: 90%;
     }
 }
