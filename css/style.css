@@ -1,82 +1,28 @@
-*{
-    font-family: "Rubik";
-    font-size: calc(inherit - 2px);
+:root{
+    font-family: "rubik";
 }
-body, main{
+body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-body > header{
-    position: fixed;
-    bottom: 0;
-    display: none;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 75%;
-    background-color: #ffffff;
-    border-radius: 32px;
-    border: #000 solid 1px;
+.article-box{
+    max-width: 60%;
 }
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+.article-header{
+    width: 100%;
 }
-header a{
-    margin: 0.64rem;
-    color: #000;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: #000 solid 2px; */
-    width: 50%;
-    height: 100%;
-}
-article > header{
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-bottom: #000 solid 1px;
-}
-h1{
-    font-weight: bolder;
-    font-size: 64px;
-}
-a{
-    text-decoration: none;
-}
-@media (feColorMatrixw  ) {
-    
-}
-#click-to-top{
-    display: block;
-    z-index: 10;
-    position: fixed;
-    bottom: 5%;
-    left: 3%;
+.article-header img{
+    width: 100%;
 }
 
-@media (max-width: 1250px) {
-    main{
-        width: 80%;
-    }
+.article-content{
+    margin-top: 3.2rem;
 }
-@media (max-width: 869px) {
-    main{
-        width: 100%;
-    }
-    header h1{
-        font-size: 45px;
-    }
-    article > header{
-        padding: 1rem;
+@media (max-width: 555px) {
+    .article-box{
+        max-width: auto;
     }
 }
