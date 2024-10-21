@@ -1,10 +1,8 @@
-/* Root Variables */
 :root {
     font-family: "Rubik";
     scroll-behavior: smooth;
 }
 
-/* General Reset */
 body {
     margin: 0;
     padding: 0;
@@ -13,13 +11,11 @@ body {
     align-items: center;
 }
 
-/* Article Container */
 .article-box, .blog-footer {
     margin: 3.2rem 0;
     width: 640px;
 }
 
-/* Article Header */
 .article-header {
     width: 100%;
     padding: 1.6rem 0;
@@ -37,7 +33,6 @@ img {
     width: 70%;
 }
 
-/* Typography */
 li, a{
     text-decoration: underline;
     color: #323232;
@@ -63,12 +58,10 @@ p, .content-header {
     list-style: none;
     padding: 0;
 }
-/* Spacing and Layout Adjustments */
 .article-content, .table-of-content, .blog-footer {
     margin-top: 3.2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 640px) {
     .article-box, .blog-footer {
         max-width: 90%;
