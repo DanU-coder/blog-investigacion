@@ -1,42 +1,86 @@
-:root{
-    font-family: "rubik";
+/* Root Variables */
+:root {
+    font-family: "Rubik";
+    scroll-behavior: smooth;
 }
-body{
+
+/* General Reset */
+body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.article-box{
-    max-width: 520px;
+
+/* Article Container */
+.article-box, .blog-footer {
+    margin: 3.2rem 0;
+    width: 640px;
 }
-.article-header{
+
+/* Article Header */
+.article-header {
     width: 100%;
     padding: 1.6rem 0;
-    border-bottom: #000 solid 1px;
+    border-bottom: 1px solid #323232;
 }
-.article-title{
-    font-size: 64px;
+
+.article-title {
+    font-size: 24px;
+    color: #161616;
+    line-height: 2;
 }
-.article-header img{
+
+img {
     display: flex;
-    justify-self: center;
     width: 70%;
 }
 
-.article-content{
+/* Typography */
+li, a{
+    text-decoration: underline;
+    color: #323232;
+    line-height: 1.5;
+}
+p, .content-header {
+    color: #323232;
+    line-height: 1.5;
+}
+
+
+.content-header {
+    font-size: 18px;
+}
+.blog-footer{
+    font-size: 14px;
+    border-top: 1px solid #2c2c2c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.blog-footer ul{
+    list-style: none;
+    padding: 0;
+}
+/* Spacing and Layout Adjustments */
+.article-content, .table-of-content, .blog-footer {
     margin-top: 3.2rem;
 }
-@media (max-width: 520px) {
-    .article-box{
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .article-box, .blog-footer {
         max-width: 90%;
     }
-    .article-title{
-        font-size: 10vw;
+
+    .article-title {
+        font-size: 8vw;
+        line-height: 1.25;
     }
-    .article-header img{
-        max-width: 100%;
+
+    .article-header img, .table-of-content {
+        width: 100%;
         height: auto;
     }
 }
