@@ -32,18 +32,23 @@ img {
     display: flex;
     width: 70%;
 }
+#tecnmLogo{
+    width: 256px;
+}
 
 li, a{
     text-decoration: underline;
     color: #323232;
     line-height: 1.5;
 }
-p, .content-header {
+p, .content-header, .article-content h4 {
     color: #323232;
     line-height: 1.5;
 }
 
-
+.article-content ol li{
+    text-decoration: none;
+}
 .content-header {
     font-size: 18px;
 }
